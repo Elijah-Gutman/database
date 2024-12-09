@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Post.create(title: "Where I live", text: "This is the first post.")
+Post.create(title: "Work stuff", text: "This is the second post.")
+Post.create(title: "How to make money!", text: "This is the third post.")
+
+Tag.create(name: "Travel")
+Tag.create(name: "Income")
+
+PostTag.create(post_id: 1, tag_id: 1)
+PostTag.create(post_id: 2, tag_id: 2)
+PostTag.create(post_id: 3, tag_id: 2)
